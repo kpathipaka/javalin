@@ -624,6 +624,7 @@ public class Javalin implements AutoCloseable {
      * Adds a WebSocket after handler for all routes in the instance.
      */
     public Javalin wsAfter(@NotNull Consumer<WsConfig> wsConfig) {
+        System.out.println("thankyou");
         return wsAfter("*", wsConfig);
     }
 
